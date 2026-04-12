@@ -14,7 +14,7 @@ pipeline{
         }
         stage('Checkout from Git'){
             steps{
-                git branch: 'master', url: 'https://github.com/Sebasxdd/video-clone.git'
+                git branch: 'main', url: 'https://github.com/Sebasxdd/video-clone.git'
             }
         }
         stage('Install Dependencies') {
