@@ -1,4 +1,4 @@
-name: '🔨 Infrastructure Configuring using Terraform on AWS' 
+name: ' Ejecutar landing zone ' 
 
 on: 
   workflow_dispatch:
