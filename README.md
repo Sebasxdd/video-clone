@@ -1,113 +1,100 @@
-# DevSecOps Project - Video clone 
+# 🎬 Proyecto DevSecOps Completo — Clon de Netflix
 
-![Architecture Diagram](assets/arch-diag.gif)
+Un proyecto **completo de DevSecOps de punta a punta** que muestra cómo automatizar, asegurar y monitorear infraestructura y aplicaciones usando herramientas modernas — desde **Terraform hasta Kubernetes**, **Jenkins hasta Trivy**, y todo lo que hay en el medio.
 
-
-A **complete end-to-end DevSecOps project** showcasing how to automate, secure, and monitor infrastructure and applications using modern tools — from **Terraform to Kubernetes**, **Jenkins to Trivy**, and everything in between.  
-
-Built to demonstrate **real-world DevSecOps workflows** for CI/CD, cloud automation, security integration, and observability — all in one Netflix-themed application. 🍿  
+Construido para demostrar **flujos de trabajo DevSecOps del mundo real** para CI/CD, automatización en la nube, integración de seguridad y observabilidad — todo en una aplicación temática de Netflix. 🍿
 
 ---
 
-## 🚀 Project Overview
+## 🚀 Descripción del Proyecto
 
-This project simulates a real enterprise-grade setup where a **React-based Netflix Clone** is deployed and managed through a **secure, automated DevOps pipeline**.
+Este proyecto simula una configuración real de nivel empresarial donde un **Clon de Netflix basado en React** es desplegado y gestionado a través de un **pipeline DevOps seguro y automatizado**.
 
-### 🌐 Key Features
-- **Infrastructure as Code** with Terraform (AWS provisioning)
-- **State management** using Terraform Cloud  
-- **CI/CD automation** with GitHub Actions and Jenkins  
-- **Security Scanning** with Trivy & OWASP Dependency Check  
-- **Containerization** with Docker  
-- **Kubernetes Deployment** (unmanaged cluster setup)  
-- **Monitoring Stack** for Jenkins, Kubernetes, and the app itself  
+### 🌐 Características Principales
+- **Infraestructura como Código** con Terraform (aprovisionamiento en AWS)
+- **Gestión de estado** usando Terraform Cloud
+- **Automatización CI/CD** con GitHub Actions y Jenkins
+- **Escaneo de Seguridad** con Trivy y OWASP Dependency Check
+- **Contenerización** con Docker
+- **Despliegue en Kubernetes** (configuración de cluster no administrado)
+- **Stack de Monitoreo** para Jenkins, Kubernetes y la propia aplicación
 
 ---
 
-## 🧩 Directory Structure
+## 🧩 Estructura de Directorios
 ```bash
 .
-├── Application-Code        # Frontend Netflix Clone app built with React + Vite
-│   ├── Dockerfile           # Docker image build instructions
-│   ├── package.json         # Dependencies and scripts
-│   ├── src/                 # Main source code
-│   └── public/              # Static assets
+├── Application-Code        # App frontend Clon de Netflix construida con React + Vite
+│   ├── Dockerfile           # Instrucciones de construcción de imagen Docker
+│   ├── package.json         # Dependencias y scripts
+│   ├── src/                 # Código fuente principal
+│   └── public/              # Archivos estáticos
 │
 ├── Jenkins
-│   └── Jenkinsfile          # CI/CD pipeline configuration (build → test → deploy)
+│   └── Jenkinsfile          # Configuración del pipeline CI/CD (build → test → deploy)
 │
 ├── Kubernetes
-│   ├── deployment.yml       # App deployment manifest
-│   └── service.yml          # K8s service exposure
+│   ├── deployment.yml       # Manifiesto de despliegue de la app
+│   └── service.yml          # Exposición del servicio K8s
 │
 └── Terraform
-    ├── main.tf              # AWS resource definitions
-    ├── backend.tf           # Terraform Cloud backend configuration
-    ├── iam.tf               # IAM roles and policies
-    ├── vpc.tf               # Network setup
-    ├── variables.tf         # Input variables
-    ├── dev.auto.tfvars      # Environment variables
-    └── gather.tf            # Data sources and dependencies
+    ├── main.tf              # Definiciones de recursos AWS
+    ├── backend.tf           # Configuración del backend en Terraform Cloud
+    ├── iam.tf               # Roles y políticas IAM
+    ├── vpc.tf               # Configuración de red
+    ├── variables.tf         # Variables de entrada
+    ├── dev.auto.tfvars      # Variables de entorno
+    └── gather.tf            # Fuentes de datos y dependencias
 ```
 
-## 🛠️ Tech Stack
+---
 
-| Category | Tools / Technologies |
-|-----------|----------------------|
-| **Infrastructure** | Terraform, AWS EC2, Terraform Cloud |
+## 🛠️ Stack Tecnológico
+
+| Categoría | Herramientas / Tecnologías |
+|-----------|----------------------------|
+| **Infraestructura** | Terraform, AWS EC2, Terraform Cloud |
 | **CI/CD** | Jenkins, GitHub Actions |
-| **Security** | Trivy, SonarQube, OWASP Dependency Check |
-| **Containerization** | Docker |
-| **Orchestration** | Kubernetes (Unmanaged Cluster) |
-| **Monitoring** | Node Exporter, Prometheus, Kube State Metrics |
+| **Seguridad** | Trivy, SonarQube, OWASP Dependency Check |
+| **Contenerización** | Docker |
+| **Orquestación** | Kubernetes (Cluster No Administrado) |
+| **Monitoreo** | Node Exporter, Prometheus, Kube State Metrics |
 | **Frontend** | React, Vite, TMDB API |
 
 ---
 
-## 🎯 Objectives
+## 🎯 Objetivos
 
-1. Automate the entire infrastructure and application deployment lifecycle  
-2. Integrate security and quality checks early in the pipeline  
-3. Establish a fully observable, monitored system for reliability  
-4. Showcase end-to-end DevSecOps workflow — ideal for portfolio and interviews  
-
----
-
-## 📽️ How to do this Project?
-
-> This project is documented through a **5-Part YouTube Series**, each building upon the previous one.
-
-| Part | Title | Description |
-|------|--------|-------------|
-| 🧩 **Part 1** | *Terraform + GitHub Actions + AWS Setup* | Infrastructure setup & automation |
-| ⚙️ **Part 2** | *Jenkins, Docker, SonarQube, Trivy Setup* | Core CI/CD pipeline foundations |
-| 🧠 **Part 3** | *SonarQube + Trivy + TMDB + Pipeline Run* | Running secure pipelines |
-| ☸️ **Part 4** | *Kubernetes Cluster Setup + Deployment* | Full app deployment in K8s |
-| 📊 **Part 5** | *Monitoring Setup* | End-to-end observability |
-
-📺 **Watch here:** [YT Playlist Link](https://youtube.com/playlist?list=PLyJzBek6WsDpKcOxL-F8rAl7FgliN9x6M&si=toDUa6Qx05LYHtbu)  
-🧾 **Read on Medium:** [Medium Blog Series Link](https://blog.stackademic.com/building-a-complete-devsecops-project-part-1-automating-aws-infrastructure-with-terraform-cloud-a51e98b95783)
+1. Automatizar todo el ciclo de vida de despliegue de infraestructura y aplicación
+2. Integrar controles de seguridad y calidad temprano en el pipeline
+3. Establecer un sistema completamente observable y monitoreado para garantizar confiabilidad
+4. Mostrar un flujo de trabajo DevSecOps de punta a punta — ideal para portafolio y entrevistas
 
 ---
 
-## 🔔 Bonus Tip
+## 📽️ ¿Cómo realizar este Proyecto?
 
-If you’re following along, don’t forget to:
-- 🎥 **Watch the video version** for step-by-step guidance  
-- 💼 **Tag [@Aman Pathak](https://www.linkedin.com/in/aman-devops/)** on LinkedIn when you post your progress — showcasing your DevOps achievements helps you grow professionally!
+> Este proyecto está documentado a través de una **Serie de 5 Partes en YouTube**, cada una construyendo sobre la anterior.
+
+|-------|--------|-------------|
+| 🧩 **Parte 1** | *Terraform + GitHub Actions + Configuración AWS* | Configuración y automatización de infraestructura |
+| ⚙️ **Parte 2** | *Jenkins, Docker, SonarQube, Trivy - Configuración* | Bases del pipeline CI/CD principal |
+| 🧠 **Parte 3** | *SonarQube + Trivy + TMDB + Ejecución del Pipeline* | Ejecución de pipelines seguros |
+| ☸️ **Parte 4** | *Configuración del Cluster Kubernetes + Despliegue* | Despliegue completo de la app en K8s |
+| 📊 **Parte 5** | *Configuración del Monitoreo* | Observabilidad de punta a punta |
+
+## 🔔 Tip Extra
+
+Si estás siguiendo el proyecto, no olvides:
+- 🎥 **Ver la versión en video** para una guía paso a paso
+- 💼 **Etiquetar a [@Aman Pathak](https://www.linkedin.com/in/aman-devops/)** en LinkedIn cuando publiques tu progreso — ¡mostrar tus logros en DevOps te ayuda a crecer profesionalmente!
 
 ---
 
-## 🧑‍💻 Author
+## Contribuciones
 
-**Connect with Me**  
-DevOps & Cloud Engineer 
-🔗 [LinkedIn](https://www.linkedin.com/in/aman-devops/) • [YouTube](https://www.youtube.com/@aman-pathak) • [Medium](https://medium.com/@amanpathakdevops)
+¡Las contribuciones son bienvenidas! Si tienes ideas para mejoras o encuentras algún problema, por favor abre un pull request o crea un issue.
 
-## Contributing
-We welcome contributions! If you have ideas for enhancements or find any issues, please open a pull request or file an issue.
+## Licencia
 
-## License
-This project is licensed under the [MIT License](LICENSE).
-
-Happy Coding! 🚀
+Este proyecto está licenciado bajo la [Licencia MIT](LICENSE).
