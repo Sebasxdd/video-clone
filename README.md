@@ -1,4 +1,4 @@
-# 🎬 Netflix Clone - DevSecOps Project
+# DevSecOps Project - Video clone 
 
 ![Architecture Diagram](assets/arch-diag.gif)
 
