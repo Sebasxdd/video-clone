@@ -83,14 +83,6 @@ Este proyecto simula una configuración real de nivel empresarial donde un **Clo
 | ☸️ **Parte 4** | *Configuración del Cluster Kubernetes + Despliegue* | Despliegue completo de la app en K8s |
 | 📊 **Parte 5** | *Configuración del Monitoreo* | Observabilidad de punta a punta |
 
-## 🔔 Tip Extra
-
-Si estás siguiendo el proyecto, no olvides:
-- 🎥 **Ver la versión en video** para una guía paso a paso
-- 💼 **Etiquetar a [@Aman Pathak](https://www.linkedin.com/in/aman-devops/)** en LinkedIn cuando publiques tu progreso — ¡mostrar tus logros en DevOps te ayuda a crecer profesionalmente!
-
----
-
 ## Contribuciones
 
 ¡Las contribuciones son bienvenidas! Si tienes ideas para mejoras o encuentras algún problema, por favor abre un pull request o crea un issue.
